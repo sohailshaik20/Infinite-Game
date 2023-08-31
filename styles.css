@@ -1,0 +1,79 @@
+.game {
+  width: 700px;
+  height: 200px;
+  border: 1px solid black;
+  margin: auto;
+  background-color: rgb(250, 249, 247) ;
+}
+
+.score{
+  text-align: right;
+  position: relative;
+  bottom: 80px;
+}
+.score1{
+  text-align: center; 
+}
+body{
+  background: fixed;
+  background-image: linear-gradient(grey,violet,black);
+}
+
+#dino {
+  width: 50px;
+  height: 50px;
+  background-image: url(https://res.cloudinary.com/di0n6iipc/image/upload/v1693471884/delivery-boy_ce2kwp.png);
+  background-size: 50px 50px;
+  position: relative;
+  top: 150px;
+  left:30px;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+
+  30% {
+    top: 130px;
+  }
+
+  50% {
+    top: 80px;
+  }
+
+  80% {
+    top: 130px;
+  }
+
+  100% {
+    top: 150px;
+  }
+}
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  position: relative;
+  top: 110px;
+  left: 580px;
+
+  background-image: url("https://raw.githubusercontent.com/mdbootstrap/knowledge-base/f8b90c507025e879cf43fad8359c76229c8c4475/JS/games/dino-game/img/cactus.png");
+  background-size: 20px 40px;
+
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 580px;
+  }
+
+  100% {
+    left: -20px;
+  }
+}
